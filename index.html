@@ -28,9 +28,12 @@
       }
     </script>
     <style>
-      body {
+      html, body {
         background-color: #EBE5DE;
         color: #1A1A1A;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
       }
       .image-grayscale {
         filter: grayscale(100%) contrast(110%);
@@ -53,6 +56,11 @@
 </script>
 </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center;">
+         <div class="animate-pulse font-serif tracking-widest text-lg">CHARGEMENT...</div>
+      </div>
+    </div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

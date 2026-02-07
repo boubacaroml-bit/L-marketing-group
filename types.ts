@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface ServiceItem {
   title: string;
   icon: React.ReactNode;
